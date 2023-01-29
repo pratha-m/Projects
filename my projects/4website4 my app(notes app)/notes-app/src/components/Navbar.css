@@ -1,0 +1,9 @@
+.navBar{
+    height:10vh;
+    width:100%;
+    background-color:blue;
+    position: relative;
+}
+
+/* border-radius:20px;z-index:2;
+       box-shadow: 2px 3px 3px #da7f7f; */

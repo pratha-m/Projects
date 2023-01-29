@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    min-height:82.5vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    color: white;
+}

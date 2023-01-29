@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Buy cool new product</title>
+  </head>
+  <body>
+    <!-- Use action="/create-checkout-session.php" if your server is PHP based. -->
+    <form action="/create-checkout-session" method="POST">
+      <div id="payment-element">
+      <button type="submit" >Checkout</button>
+    </div>
+    </form>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded",async()=>{
+      // 1 fetch publishable key 
+       const {publishablekey}=fetch("/publishable-key").then(r=>r.json())
+
+       const stripe=Strip(publishablekey);
+
+
+
+       const {clientSecret}=await fetch("/secret",{method:"POST"})
+       .then(r=>r.json())
+
+       const element=stripe.elements();
+       const paymentElement=element.create("payment",{clientSecret});
+       paymentElement.mount("#payment-element");
+       
+    })
+  </script>
+</html>

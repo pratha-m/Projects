@@ -1,0 +1,14 @@
+.rightSideBar{
+    height:80vh;
+    width:100%;
+    background-color: orange;
+    overflow:auto;
+}
+.notesHeadDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notesHeadDiv>h1{
+    font-size: 70px;
+}

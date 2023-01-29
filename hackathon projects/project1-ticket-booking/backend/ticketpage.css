@@ -1,0 +1,175 @@
+body{
+    margin: 0 ;
+    background-color: lightgrey;
+    background-image:
+            linear-gradient(90deg,
+              rgba(245,70,66, 0.75),
+              rgba(8,83,156, 0.75)), url(
+'11.jpg');
+}
+
+#ava_fl{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container{
+    height: 130px; 
+    width:  50% ;
+    background-color:white;
+    margin: 15px auto;
+    border-radius: 10px;
+    display: flex;
+
+}
+
+.air_logo{
+    height: 120px ;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.air_logo img{
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 50px;
+    width: 60px;
+    justify-content: center;
+}
+
+.fl_name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:Trebuchet MS;
+    color: grey;
+}
+
+.flp{
+    margin-bottom: -15px ;
+}
+
+.dep{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 50px;
+}
+
+.dep p{
+    margin: 0;
+    margin-bottom: 2px;
+    font-family: monospace;
+}
+
+.dep_from{
+    color: rgb(96, 92, 92);
+    font-size: 18px;
+}
+
+.time{
+    font-size: 20px;
+}
+
+.date,.dep_to{
+    color: rgb(110, 110, 106);
+}
+
+.line{
+    width: 120px;
+    border: 1px solid rgb(159, 155, 155);
+}
+
+.line_container p{
+    font-family: monospace;
+
+}
+
+.line_container{
+    text-align: center;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.line_time{
+    margin-bottom: 5px;
+}
+
+.stop{
+    margin-top: 5px;
+}
+
+.ret{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 30px;
+}
+
+
+.ret p{
+    margin: 0;
+    margin-bottom: 2px;
+    font-family: monospace;
+}
+
+.ret_to{
+    color: rgb(96, 92, 92);
+    font-size: 18px;
+}
+
+.ret_time{
+    font-size: 20px;
+}
+
+.ret_date,.ret_from{
+    color: rgb(110, 110, 106);
+}
+
+.line_hr{
+    margin-left: 20px;
+}
+
+.t_price{
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    align-items: center;
+    color: orangered ;
+}
+
+.book_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    background-color: orangered;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 60px;
+    margin-right: 20px;
+    font-size: larger;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.book_btn a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.book_btn:hover{
+    background-color:rgb(18, 18, 84);
+}
